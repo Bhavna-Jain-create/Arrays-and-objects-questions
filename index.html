@@ -130,168 +130,165 @@
     <script>
         // 13. JavaScript Program to Check if An Array Contains a Specified Value
 
-//         var arr = [1,2,3,4,5,6,7];
+        var arr = [1,2,3,4,5,6,7];
         
-//         for(i=0;i<arr.length;i++){
-//             if(arr[i] == 5){
-//                 console.log("true")
-//             }
-//         }
-//  // console.log("false");
+        for(i=0;i<arr.length;i++){
+            if(arr[i] == 5){
+                console.log("true")
+            }
+        }
+  //console.log("false");
     </script>
+    <!--..........................................................................................-->
     <script>
         // 14. JavaScript Program to Insert Item in an Array
 
-        //  var arr = [1,2,3,4,5,6,7,8];
-        // // var array = arr.splice(1,2,65,99);
-        // // console.log(arr);
-     
+         var arr = [1,2,3,4,5,6,7,8];
+        var repNum = 2;
 
-        // var repNum = 2;
-
-        // for(i=0;i<arr.length; i++){
-        //     if(arr[i] == repNum){
-        //         arr[i] = 65;
-        //     }
-        // }
-        // console.log(arr);
+        for(i=0;i<arr.length; i++){
+            if(arr[i] == repNum){
+                arr[i] = 65;
+            }
+        }
+        console.log(arr);
     </script>
+    <!--...........................................................................................-->
     <script>
        // 15. JavaScript Program to Append an Object to An Array
 
-    //    var arr = [1,2,3];
-    //    var obj = {x:2,y:5};
+       var arr = [1,2,3];
+       var obj = {x:2,y:5};
 
-    //    //var app = arr.push(obj);
-    //  //  console.log(arr);
+       //var app = arr.push(obj);
+     //  console.log(arr);
 
-    //  var repNum = 2;
+     var repNum = 2;
 
-    //  for(i=0;i<arr.length; i++){
-    //     if(arr[i] == repNum){
-    //         arr[i] = obj;
+     for(i=0;i<arr.length; i++){
+        if(arr[i] == repNum){
+            arr[i] = obj;
 
-    //     }
-    //  }
-    //  console.log(arr);
+        }
+     }
+     console.log(arr);
     </script>
+    <!--..........................................................................................-->
     <script>
         // 16. JavaScript Program to Check if An Object is An Array
 
-        // var arr = [1,2,3,4,5];
-    //   var arr = "javascript";
-    //     var checkArr = Array.isArray(arr);
-    //     console.log(checkArr);
-    // console.log(typeof arr);
+        var arr = [1,2,3,4,5];
+      var arr = "javascript";
+        var checkArr = Array.isArray(arr);
+        console.log(checkArr);
+    console.log(typeof arr);
     </script>
+    <!--.............................................................................................-->
 <script>
     // 17. JavaScript Program to Empty an Array
 
-//     var arr = [1,2,3,4,5,6,7];
-//    // arr.length = 0;
-//  // var arrSplice = arr.splice(0,(arr.length));
-//     console.log(arr);
+    var arr = [1,2,3,4,5,6,7];
+   // arr.length = 0;
+ // var arrSplice = arr.splice(0,(arr.length));
+    console.log(arr);
 
-// arr = [];
-// console.log(arr);
+arr = [];
+console.log(arr);
 </script>
+<!--.................................................................................................-->
 <script>
     // 18. JavaScript Program to Add Element to Start of an Array
-    // var arr = [1,2,3];
-    // var addArr = 4;
-    //  var resultArr = arr.unshift(addArr);
-    //  console.log(arr);
+    var arr = [1,2,3];
+    var addArr = 4;
+     var resultArr = arr.unshift(addArr);
+     console.log(arr);
 </script>
+<!--....................................................................................................-->
 <script>
     // 19. JavaScript Program to Remove Duplicates From Array
-//     var arr = [1,2,3,2,4,5,6,7,8];
-// console.log(arr);
-//     // Method-1
-//     var uniarr = [new Set(arr)];
-//     // console.log(uniarr);
+    var arr = [1,2,3,2,4,5,6,7,8];
+console.log(arr);
+    // Method-1
+    var uniarr = [new Set(arr)];
+    // console.log(uniarr);
     
-//     // Method-2
-//    for(i=0; i< arr.length; i++){
-//     for(j=i + 1; j<arr.length; j++){
-//         //console.log(arr[i],arr[j]);
-//         if(arr[i] == arr[j]){
+    // Method-2
+   for(i=0; i< arr.length; i++){
+    for(j=i + 1; j<arr.length; j++){
+        //console.log(arr[i],arr[j]);
+        if(arr[i] == arr[j]){
            
-//             // console.log(arr[k]);
-//             var duplicateValue = arr[j];
-//             var lastValue = arr[arr.length - 1];
-//             //console.log(duplicateValue);
-//            // console.log(lastValue);
-//            arr[arr.length - 1] = duplicateValue;
-//            arr[j] = lastValue;
-//            arr.length--
+            // console.log(arr[k]);
+            var duplicateValue = arr[j];
+            var lastValue = arr[arr.length - 1];
+            //console.log(duplicateValue);
+           // console.log(lastValue);
+           arr[arr.length - 1] = duplicateValue;
+           arr[j] = lastValue;
+           arr.length--
         
-//         }
-//     }
-//    }
-//    console.log(arr);
+        }
+    }
+   }
+   console.log(arr);
    
 </script>
+<!--................................................................................................-->
 <script>
     //  Write a program to find a number is in array?
-    // var arr = [1,2,3,2,4,5,6];
-    // var num = 3 ;
-    // for(i=0; i<arr.length;i++){
-    //     if(arr[i] == num){
-    //         console.log("true");
-    //         break
-    //     }   
-    //     else{
-    //         console.log("false");
-    //     }
-    // }
+    var arr = [1,2,3,2,4,5,6];
+    var num = 3 ;
+    for(i=0; i<arr.length;i++){
+        if(arr[i] == num){
+            console.log("true");
+            break
+        }   
+        else{
+            console.log("false");
+        }
+    }
 </script>
+<!--...................................................................................................-->
 <script>
     // 20. JavaScript Program to Merge Two Arrays and Remove Duplicate Items
 
-//     const arr = [2, 5, 8, 2, 6, 0, 3, 6];
-// const arr2 = [4,5,89,0];
+const arr = [2, 5, 8, 2, 6, 0, 3, 6];
+const arrs2 = [4,5,89,0];
+const arr3 = `${arr} ${arrs2}`;
+console.log(arr3);
+for (i=0 ; i < arr3.length ; i++) {
+  const currentValue = arr3[i];
+  for (j = i+1 ; j < arr3.length ; j++) {
+    if (arr3[i] === arr3[j]) {
+      // arr.splice(i, 1);
+        var duplicateValue = arr3[j];
+        var lastValue = arr3[arr3.length - 1];
+        arr[arr3.length - 1] = duplicateValue;
+        arr3[j] = lastValue;
+        arr3.length-- 
+    };  
+  };
+};
 
-// const arr3 = `${arr} ${arr2}`;
-// console.log(arr3);
-// for (i=0 ; i < arr3.length ; i++) {
-//   const currentValue = arr3[i];
-  
-//   for (j = i+1 ; j < arr3.length ; j++) {
-    
-//     if (arr3[i] === arr3[j]) {
-//       // arr.splice(i, 1);
-      
-       
-//         var duplicateValue = arr3[j];
-//         var lastValue = arr3[arr3.length - 1];
-//         arr[arr3.length - 1] = duplicateValue;
-//         arr3[j] = lastValue;
-//         arr3.length--
-      
-      
-//     }
-    
-//   }
-// }
-
-// console.log(arr3);
+console.log(arr3);
 </script>
-
+<!--...................................................................................................-->
 <script>
     // merge two arrays
 
-//     const arr = [2, 5, 8, 2, 6, 0, 3, 6];
-// const arr2 = [4,5,89,0];
-// var a = 0;
-// length1 = arr.length;
-// length2 = arr2.length;
+    const arr = [2, 5, 8, 2, 6, 0, 3, 6];
+const arr2 = [4,5,89,0];
+var a = 0;
+length1 = arr.length;
+length2 = arr2.length;
 
-// for(i=length1; i< (length1 + length2); i++){
-//     arr[i] = arr2[a];
-//     a++;
-// }
-// console.log(arr);
+for(i=length1; i< (length1 + length2); i++){
+    arr[i] = arr2[a];
+    a++;
+}
+console.log(arr);
 </script>
+<!--................................................................................................-->
 <script>
 
 </script>
@@ -327,61 +324,64 @@ for(j=0;j<(uniArr.length-1);j++){
 console.log(uniArr);
 
     </script>
+    <!--..........................................................................................-->
 <script>
     //22. //write a program to display all 1s at start and all 0s at end of array
 
 //input = [1,0,0,0,0,1,0,1,0]
 //output = [1,1,1,0,0,0,0,0,0]
 
-// var arr = [1,0,0,0,0,1,0,1,0,1];
-// var count = 0;
+var arr = [1,0,0,0,0,1,0,1,0,1];
+var count = 0;
 
 
-// for(i=0;i<arr.length;i++){
-//   if(arr[i] == 1){
-//     count++
-//   }
-// }
-// for(j=0; j<count;j++){
-//     arr[j]=1;
-//   }
-// for(k=count;k<arr.length;k++){
-//     arr[k] = 0;
-//   }
-//  console.log(count);
-//  console.log(arr);
+for(i=0;i<arr.length;i++){
+  if(arr[i] == 1){
+    count++
+  }
+}
+for(j=0; j<count;j++){
+    arr[j]=1;
+  }
+for(k=count;k<arr.length;k++){
+    arr[k] = 0;
+  }
+ console.log(count);
+ console.log(arr);
 </script>
+<!--...............................................................................................-->
 <script>
    // input=["A","B","C","Y","Z"];
    // output=[1,2,3,25,26];
-//     var alphaArr = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"];
+    var alphaArr = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"];
 
-// // Method-1
-// var arr = ["A","B","C","Y","Z","D"];
-// console.log(arr.indexOf("B"));
+// Method-1
+var arr = ["A","B","C","Y","Z","D"];
+console.log(arr.indexOf("B"));
 
-// var Num = 27 - [alphaArr.length - alphaArr.indexOf(arr[0])];
-// console.log(Num);
-// for(i=0;i<arr.length;i++){
-//    arr[i] = 27 - [alphaArr.length - alphaArr.indexOf(arr[i])];
+var Num = 27 - [alphaArr.length - alphaArr.indexOf(arr[0])];
+console.log(Num);
+for(i=0;i<arr.length;i++){
+   arr[i] = 27 - [alphaArr.length - alphaArr.indexOf(arr[i])];
   
-// }
-// //console.log(Num);
-// console.log(arr);
-//Method-2
+}
+//console.log(Num);
+console.log(arr);
+Method-2
 
-// const arr = ['A','B','C','Y','Z','D','G'];
+const arr = ['A','B','C','Y','Z','D','G'];
 
-// let result = [];
+let results = [];
 
-// for(i=0;i<arr.length;i++){
-//   //console.log(arr[i].charCodeAt);
-//   var placeNumber = arr[i].charCodeAt() - 64;
-//   result.push(placeNumber);
-// }
-// console.log(result);
+for(i=0;i<arr.length;i++){
+  //console.log(arr[i].charCodeAt);
+  var placeNumber = arr[i].charCodeAt() - 64;
+  results.push(placeNumber);
+}
+console.log(results);
 
 </script>
+<!--............................................................................................-->
 <script>
     //21. JavaScript Program to Create Two Dimensional Array
 var arr = [];
@@ -399,6 +399,7 @@ for(i=0;i<rows;i++){
 }
 console.log(arr);
 </script>
+<!--..............................................................................................-->
 <script>
     //23 JavaScript Program to Extract Given Property Values from Objects as Array
 var newArray = [];
@@ -416,6 +417,7 @@ var arr = [
     
 
 </script>
+<!--.......................................................................................-->
 <script>
     
     //24. JavaScript Program to Compare Elements of Two Arrays
@@ -434,7 +436,7 @@ for(i=0;i<array1.length;i++){
 }
 console.log(arr);
 </script>
-
+<!--...........................................................................................-->
 <script>
     // array = [3,8,3,8,10,3,10,15,20,15]
    //repeated value and frequency
@@ -465,6 +467,7 @@ console.log(arr);
      }
     console.log(maxNumber);
 </script>
+<!--........................................................................................-->
 <script>
   var array = [3,8,3,8,10,3,10,15,20,15];
    var maxNumber = array[0];
@@ -472,6 +475,7 @@ console.log(arr);
   console.log(array[i]);
   }
 </script>
+<!--.....................................................................................-->
 <script>
 var array1 = [[1,2],[2,3],[4,5],[7,6],[3,9]];
 var array2 = [5,3,13,10,12,45];
@@ -492,6 +496,7 @@ console.log(result);
 
 
 </script>
+<!--.............................................................................................-->
 <script>
   // JavaScript Program to Split Array into Smaller Chunks
 
@@ -508,6 +513,7 @@ for(i=0;i<array.length;i+=2){
 }
 console.log(result);
 </script>
+<!--.............................................................................................-->
 <script>
   // JavaScript Program to Print the Fibonacci Sequence.
 var num = 10;
@@ -523,6 +529,7 @@ for(i=2;i<num;i++){
 }
 console.log(array);
 </script>
+<!--...............................................................................................-->
 <script>
   //JavaScript Program to Check Armstrong Number
   var num = "153";
@@ -535,6 +542,7 @@ console.log(array);
  }
  console.log(sum);
 </script>
+<!--.................................................................................................-->
 <script>
   var array = [3,8,10,15,20,25,10];
 var num = 15;
@@ -547,6 +555,7 @@ for(i=0;i<array.length;i++){
 }
 console.log(arr);
 </script>
+<!--...................................................................................................-->
 <script>
   //  Find a peak element which is not smaller than its neighbours
 
@@ -562,7 +571,7 @@ for(i=1;i<array.length;i++){
 }
 console.log(findNum);
 </script>
-
+<!--...................................................................................................-->
 <script>
   // Move all negative numbers to beginning and positive to end with constant extra space
  // Input: -12, 11, -13, -5, 6, -7, 5, -3, -6
@@ -584,6 +593,7 @@ for(j=0;j<arr.length;j++){
 }
 console.log(array);
 </script>
+<!--.............................................................................................-->
 <script>
   //Input  : 1,2,3
 //Output : 3,2,1
@@ -594,6 +604,7 @@ for(i=(arr.length-1); i>=0; i--){
   console.log(arr[i]);
 }
 </script>
+<!--...................................................................................................-->
 <script>
   // Reverse a string
 //Method-1
@@ -616,6 +627,7 @@ var revStr = str.reverse();
 
 console.log(revStr.join(""));
 </script>
+<!--...............................................................................................-->
 <script>
   //find the missing number
   var arr = [1,2,4,6,5,7,8];
@@ -642,5 +654,6 @@ for(i=0;i<arr.length;i++){
 }
 console.log(ans);
 </script>
+<!--................................................................................................-->
 </body>
 </html>
